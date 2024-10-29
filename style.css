@@ -1,0 +1,31 @@
+*{
+    font-family: helvetica, arial;
+  }
+.header img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 16px;
+    left: 10px;
+    margin-bottom: 100px;
+    
+  }
+
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+h1{
+    background-color: rgb(11, 70, 64);
+    text-align: center;
+    color: aliceblue;
+    margin-inline-start: 3%;
+  }
+
