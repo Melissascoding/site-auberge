@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location de Vacances - [Nom du Lieu]</title>
+    <title>La Belle Auberge</title>
     <link rel="stylesheet" href="style.css">
     <style>
     </style>
 </head>
 <body>
     <header class="header"> 
-        <div>
-        <img src="images/TP1.jpg" alt="logo">
-        <h1>La Belle Auberge</h1>
-        </div>
         <nav>
-            <ul>
-                <li><a href="http://www.google.com">Description</a></li>
-                <li><a href="http://www.google.com">Galerie</a></li>
-                <li><a href="http://www.google.com">Services</a></li>
-                <li><a href="http://www.google.com">Avis</a></li>
-                <li><a href="http://www.google.com">Contact</a></li>    
-            </ul>
+            <div class="container flexRow spaceBetween">
+                <div>
+                    <ul>
+                        <li><a href="http://www.google.com">DESCRIPTION</a></li>
+                        <li><a href="http://www.google.com">GALERIE</a></li>
+                        <li><a href="http://www.google.com">SERVICES</a></li>
+                        <li><a href="http://www.google.com">AVIS</a></li>
+                        <li><a href="http://www.google.com">CONTACT</a></li>    
+                    </ul>
+                </div>
         </nav>
+                  
+                <div>
+                    <img src="images/TP1.jpg" alt="logo">
+                    <h1>LA BELLE AUBERGE</h1>
+                </div>
+                    
+            </div> 
+
+
+           
     </header>
     <main>
-        <table></table>
+        <table>
+
+        </table>
+
         <section id="Description">
             <h2>Description</h2>
             <p class="frond-route" id="firstp">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <h3>Points Forts</h3>
+            
+                <h3>Points Forts</h3>
             <ul>
                 <li>Lorem ipsum dolor</li>
                 <li>Lorem ipsum dolor</li>
@@ -40,6 +53,7 @@
             </ul>
 
         </section>
+        
         <section id="Galerie">
             <h2>Galerie</h2>
             <div>
@@ -51,17 +65,21 @@
 
         <section id="Services"><h2>Services et Equipements</h2>
         <ul>
-            <li><strong>Wi-Fi :</strong> Inclus</li>
-            <li><strong>Parking :</strong>Privé et sécurité</li>
-            <li><strong>Petit-déjeuner :</strong> Disponible sur demande</li>
-            <li><strong>Piscine :</strong>Accès libre</li>
+            <li><strong>Wi-Fi :</strong> Inclus </li>
+            <li><strong>Parking :</strong> Privé et sécurité </li>
+            <li><strong>Petit-déjeuner :</strong> Disponible sur demande </li>
+            <li><strong>Piscine :</strong> Accès libre </li>
         </ul>
         </section>
 
         <section id="Avis">
             <h2>Avis des clients</h2>
-            <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." - Marie France</blockquote>
-            <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." - Jean-Pierre</blockquote>
+                <div class="avis">
+                    <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum." - Marie France</blockquote>
+                    <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum." - Jean-Pierre</blockquote>
+                </div>
         </section>
         
         <section id="Contact">

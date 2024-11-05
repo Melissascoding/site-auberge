@@ -1,31 +1,158 @@
-*{
-    font-family: helvetica, arial;
-  }
-.header img {
-    float: left;
-    width: 50px;
-    height: 50px;
-    background: #555;
-  }
-  
-  .header h1 {
-    position: relative;
-    top: 16px;
-    left: 10px;
-    margin-bottom: 100px;
-    
+* {
+  font-family: helvetica, arial;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background-color: rgb(248, 232, 218);
+  box-sizing: border-box;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: #3A3AE4;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header img {
+  float: left;
+  width: 40px;
+  height: 50px;
+}
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0 10px;
+}
+nav {
+  color: #363636;
+  font-size: 15px;
+  line-height: 7px;
+  text-align: right;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, .1);
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul li {
+  color: white;
+  padding: 14px 20px;
+}
+#Description {
+  padding: 30px 100px;
+}
+#Description p {
+  padding: 10px;
+}
+#Galerie {
+  padding: 50px 70px;
+}
+#Galerie img {
+  margin: 10px;
+  height: 250px;
+}
+#Services ul, #Services ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+#Avis {
+  background-image: url(images/TP1.jpg);
+  background-size: cover;
+}
+#Contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+#Contact label {
+  margin: 10px 0 5px;
+}
+#Contact input, #Contact textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#Contact button {
+  padding: 10px;
+  background-color: #363636;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/*footer {
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}*/
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; 
+    align-items: flex-start;
   }
 
-  nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  nav ul li {
+    padding: 10px 20px;
   }
 
-h1{
-    background-color: rgb(11, 70, 64);
-    text-align: center;
-    color: aliceblue;
-    margin-inline-start: 3%;
-  }
+}
+header .header {
+  flex-direction: column;
+  text-align: center; 
+}
+
+header img {
+  width: 30px; 
+  height: 40px;
+}
+
+header h1 {
+  font-size: 1.5rem; 
+}
+#Description {
+  padding: 20px; 
+}
+
+#Galerie {
+  padding: 20px;
+}
+
+#Galerie img {
+  height: 200px; 
+}
+
+#Contact form {
+  width: 90%; 
+}
+
+#Contact button {
+  padding: 12px; 
+}
+
+#Avis {
+  background-size: contain; 
+}
+
+
+
+
 
