@@ -1,55 +1,53 @@
- 
-body {
-  background-color: rgb(249, 245, 241);
-}
+ body {
+   background-color: rgb(249, 241, 241);
+ }
 
-header ul li a:hover {
-  color: #1b7277;
-}
+ header ul li a:hover {
+   color: #1b7277;
+ }
 
-header, .headerBox .headerLeft {
-  position: relative;
+ header .container{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0;
-  padding-bottom: 40px;
-  transition: padding;
-}
+ }
 
-header, .headerBox, ul .menu {
-  align-items: right;
-  display: flex;
+ header .navDesktop{
+  display: flex; 
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: flex-end;
+ }
 
-}
+ header,
+ .headerBox .headerLeft {
+   position: relative;  
+   padding: 1px 1px 1px 1px;
+   margin: 0 250px 0 0;
+   transition: padding;
+ }
 
-header .headerLeft {
-  float: left;
-  width: 2px;
-  height: px;
-  padding-bottom: 40px;
-}
-
-header, .headerCenter {
-  align-items: center;
-  width: 4px;
-  height: 10px;
-}
-
-header, .headerCenter img{
-  width: 10px;
-  height: 10px;
-}
-
-header .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
+ header .headerBox .headerLeft img {
+    background-image: url(images/hotellogo_black.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
 
 
-/*
+  header .headerBox .headerCenter img{
+   background-image: url(/home/melissascoding/html2024/site-auberge/images/header center.jpg);
+   max-width: 300px;
+ }
+
+ header .header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+ }
+
+
+ /*
 nav {
   color: #363636;
   font-size: 15px;
@@ -57,89 +55,96 @@ nav {
   text-align: right;
 }*/
 
-.header nav {
-  background-color: rgb(0, 0, 0, 0.2);
-}
 
-header .menu {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-header ul .menu {
- display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  unicode-bidi: isolate;
-}
-
-nav ul li {
-  color: white;
-  padding: 14px 20px;
-}
-section #Galerie, #Services {
-  margin-bottom: 3rem;
-}
-
-#Description {
-  padding: 40px 100px;
-}
-#Description p {
-  padding: 10px;
-}
-#Galerie {
-  padding: 50px 70px;
+ header .headerCenter{
+   display: block;
  }
 
-#Galerie img {
-  margin: 10px;
-  height: 250px;
-}
-#Services ul, #Services ul li {
-  list-style-type: none;
+ header nav .menu{
+  display: flex;
+  list-style: none;
   padding: 0;
   margin: 0;
-  padding-left: 20px;
-}
-#Avis {
-  background-image: url(images/TP1.jpg);
-  background-size: cover;
-}
-#Contact form {
+ }
+
+ header nav .menu li {
   display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 20px auto;
-}
-#Contact label {
-  margin: 10px 0 5px;
-}
-#Contact input, #Contact textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-#Contact button {
-  padding: 10px;
-  background-color: #363636;
+  align-items: center;
+ }
+
+ header nav .menu li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+ }
+
+ section #Galerie,
+ #Services {
+   margin-bottom: 3rem;
+ }
+
+ #Description {
+   padding: 40px 100px;
+ }
+
+ #Description p {
+   padding: 10px;
+ }
+
+ #Galerie {
+   padding: 50px 70px;
+ }
+
+ #Galerie img {
+   margin: 10px;
+   height: 250px;
+ }
+
+ #Services {
+   padding: 50px 20px;
+ }
+
+ #Services ul,
+ #Services ul li {
+   list-style-type: none;
+   padding: 5px;
+   margin: 0;
+ }
+
+ #Avis {}
+
+ #Contact form {
+   display: flex;
+   flex-direction: column;
+   max-width: 400px;
+   margin: 20px auto;
+ }
+
+ #Contact label {
+   margin: 10px 0 5px;
+ }
+
+ #Contact input,
+ #Contact textarea {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+ }
+
+ #Contact button {
+   padding: 10px;
+   background-color: #363636;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
 
 
-/*footer {
+ /*footer {
   background-color: rgba(0, 0, 0, .8);
   color: white;
   padding: 20px;
@@ -148,31 +153,26 @@ section #Galerie, #Services {
 
 
 
-#Description {
-  padding: 20px; 
-}
+ #Description {
+   padding: 20px;
+ }
 
-#Galerie {
-  padding: 20px;
-}
+ #Galerie {
+   padding: 20px;
+ }
 
-#Galerie img {
-  height: 200px; 
-}
+ #Galerie img {
+   height: 200px;
+ }
 
-#Contact form {
-  width: 90%; 
-}
+ #Contact form {
+   width: 90%;
+ }
 
-#Contact button {
-  padding: 12px; 
-}
+ #Contact button {
+   padding: 12px;
+ }
 
-#Avis {
-  background-size: contain; 
-}
-
-
-
-
-
+ #Avis {
+   background-size: contain;
+ }
