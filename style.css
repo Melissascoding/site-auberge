@@ -1,62 +1,104 @@
-* {
-  font-family: helvetica, arial;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  background-color: rgb(248, 232, 218);
-  box-sizing: border-box;
+ 
+body {
+  background-color: rgb(249, 245, 241);
 }
-a {
-  color: black;
-  text-decoration: none;
-}
+
 header ul li a:hover {
-  color: #3A3AE4;
+  color: #1b7277;
 }
+
+header, .headerBox .headerLeft {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 40px;
+  transition: padding;
+}
+
+header, .headerBox, ul .menu {
+  align-items: right;
+  display: flex;
+
+}
+
+header .headerLeft {
+  float: left;
+  width: 2px;
+  height: px;
+  padding-bottom: 40px;
+}
+
+header, .headerCenter {
+  align-items: center;
+  width: 4px;
+  height: 10px;
+}
+
+header, .headerCenter img{
+  width: 10px;
+  height: 10px;
+}
+
 header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
-header img {
-  float: left;
-  width: 40px;
-  height: 50px;
-}
-header h1 {
-  color: white;
-  text-align: center;
-  margin: 0 10px;
-}
+
+
+/*
 nav {
   color: #363636;
   font-size: 15px;
   line-height: 7px;
   text-align: right;
+}*/
+
+.header nav {
+  background-color: rgb(0, 0, 0, 0.2);
 }
-nav ul {
+
+header .menu {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: rgba(0, 0, 0, .1);
   align-items: center;
   justify-content: flex-end;
 }
+
+header ul .menu {
+ display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
 nav ul li {
   color: white;
   padding: 14px 20px;
 }
+section #Galerie, #Services {
+  margin-bottom: 3rem;
+}
+
 #Description {
-  padding: 30px 100px;
+  padding: 40px 100px;
 }
 #Description p {
   padding: 10px;
 }
 #Galerie {
   padding: 50px 70px;
-}
+ }
+
 #Galerie img {
   margin: 10px;
   height: 250px;
@@ -104,30 +146,8 @@ nav ul li {
   text-align: center;
 }*/
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column; 
-    align-items: flex-start;
-  }
 
-  nav ul li {
-    padding: 10px 20px;
-  }
 
-}
-header .header {
-  flex-direction: column;
-  text-align: center; 
-}
-
-header img {
-  width: 30px; 
-  height: 40px;
-}
-
-header h1 {
-  font-size: 1.5rem; 
-}
 #Description {
   padding: 20px; 
 }
