@@ -2,177 +2,144 @@
    background-color: rgb(249, 241, 241);
  }
 
- header ul li a:hover {
-   color: #1b7277;
+ header .navbar .nav-links a:hover{
+   color: #8f28be;
  }
 
- header .container{
+
+ header{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(img/Banner-2.png);
+  background-position: top;
+  background-size: cover;
+  background-size: 80%;
+}
+
+.navbar{
+  position: absolute;
+  padding: 50px;
   display: flex;
- }
-
- header .navDesktop{
-  display: flex; 
-  background-color: rgba(0, 0, 0, 0.2);
-  justify-content: flex-end;
- }
-
- header,
- .headerBox .headerLeft {
-   position: relative;  
-   padding: 1px 1px 1px 1px;
-   margin: 0 250px 0 0;
-   transition: padding;
- }
-
- header .headerBox .headerLeft img {
-    background-image: url(images/hotellogo_black.png);
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
- }
-
-
-  header .headerBox .headerCenter img{
-   background-image: url(/home/melissascoding/html2024/site-auberge/images/header center.jpg);
-   max-width: 300px;
- }
-
- header .header{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px;
- }
-
-
- /*
-nav {
-  color: #363636;
-  font-size: 15px;
-  line-height: 7px;
-  text-align: right;
-}*/
-
-
- header .headerCenter{
-   display: block;
- }
-
- header nav .menu{
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
- }
-
- header nav .menu li {
-  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
   align-items: center;
- }
-
- header nav .menu li a {
-  display: block;
-  padding: 14px 20px;
-  text-decoration: none;
-  color: white;
- }
-
- section #Galerie,
- #Services {
-   margin-bottom: 3rem;
- }
-
- #Description {
-   padding: 40px 100px;
- }
-
- #Description p {
-   padding: 10px;
- }
-
- #Galerie {
-   padding: 50px 70px;
- }
-
- #Galerie img {
-   margin: 10px;
-   height: 250px;
- }
-
- #Services {
-   padding: 50px 20px;
- }
-
- #Services ul,
- #Services ul li {
-   list-style-type: none;
-   padding: 5px;
-   margin: 0;
- }
-
- #Avis {}
-
- #Contact form {
-   display: flex;
-   flex-direction: column;
-   max-width: 400px;
-   margin: 20px auto;
- }
-
- #Contact label {
-   margin: 10px 0 5px;
- }
-
- #Contact input,
- #Contact textarea {
-   width: 100%;
-   padding: 8px;
-   margin-bottom: 10px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
- }
-
- #Contact button {
-   padding: 10px;
-   background-color: #363636;
-   color: white;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
- }
+}
 
 
- /*footer {
-  background-color: rgba(0, 0, 0, .8);
-  color: white;
-  padding: 20px;
-  text-align: center;
-}*/
+.navbar .nav-links ul{
+  display: flex;
+}
+
+.navbar .logo-top{
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(5, 44, 5)
+  }
+
+  .navbar .logo-center{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(5, 44, 5)
+    }
+.navbar .nav-links .list-menu a{
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(5, 44, 5)
+  }
+
+.navbar .nav-links ul li{
+  margin: 0 10px;
+}
+
+.navbar .menu-hamburger{
+  display: none; /* afficher que quand la taille de l'écran change*/
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  width: 35px;
+}
+
+section{
+  display: flex;
+  margin: ;
+  padding: 10px 40px;
+  justify-content:left;
+  width: 100%;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2{
+  padding: 10px 10px;
+  margin: 10px 40px;
+}
 
 
 
- #Description {
-   padding: 20px;
- }
+@media screen and (max-width: 900px) {
+  header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/Banner-2.png);
+    background-position: top;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat:no-repeat;
+  }
 
- #Galerie {
-   padding: 20px;
- }
+  .navbar .logo-top{
+    position: absolute;
+    top: 50px;  
+    left: 50px;   
+    font-size: 1em;     
+  }
 
- #Galerie img {
-   height: 200px;
- }
+  .navbar{
+    padding: 0;
+  }
 
- #Contact form {
-   width: 90%;
- }
+  .navbar .menu-hamburger{
+    display: block;
+  }
 
- #Contact button {
-   padding: 12px;
- }
+  .mobile-menu{
+    margin-left: 0;  
+  }
 
- #Avis {
-   background-size: contain;
- }
+  .nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(45, 12, 42, 0.285);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;  
+    transition: 0.5s ease;
+  }
+
+  .nav-links .mobile-menu{
+    margin-left: 0;  
+
+  }
+  
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li{
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  
+}
