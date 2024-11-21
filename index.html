@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,12 +8,13 @@
     <title>La Belle Auberge</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generic.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
     </style>
 </head>
 
 <body>
-    <header class=> 
+    <header>
         <nav class="navbar">
             <a href="#" class="logo-top">CHARTRES</a>
             <div class="nav-links">
@@ -21,13 +23,72 @@
                     <li><a href="http://www.google.com">GALERIE</a></li>
                     <li><a href="http://www.google.com">SERVICES</a></li>
                     <li><a href="http://www.google.com">AVIS CLIENTS</a></li>
-                    <li><a href="http://www.google.com">CONTACT</a></li>    
-                </ul> 
+                    <li><a href="http://www.google.com">CONTACT</a></li>
+                </ul>
             </div>
-            <img src="site-auberge/images/lines.png" alt="menu hamburger" class="menu-hamburger">         
-        </nav>                           
-           
+
+            <img src="site-auberge/images/lines.png" alt="menu hamburger" class="menu-hamburger">
+
+        </nav>
+
+        <div class="container-header">
+                
+
+                <div class="header-content">
+                    <h1>La Belle Auberge</h1>
+                    <p>N'attendez plus et réservez un séjour de folie dans notre auberge.</p>
+                </div>
+
+                <div class="booking-container">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="date" id="start" name="trip-start" value="2025-01-01" min="2025-01-01"
+                                    max="2025-05-01">
+                                <label>Date d'arrivée</label>
+                            </div>
+                            <p>Entrez une date</p>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="date" id="start" name="trip-end" value="2025-01-01" min="2025-01-01"
+                                    max="2025-05-01">
+                                <label>Date de départ</label>
+                            </div>
+                            <p>Entrez une date</p>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="number" id="number" min="1" max="10">
+                                <label>Invité.e.s</label>
+                            </div>
+                            <p>Ajoutez le nombre d'invité.e.s</p>
+                        </div>
+
+                    </form>
+
+                    <button class="btn">
+                        <i class='bx bx-search'></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+
     </header>
+
+    <div class="aside-menu">
+        <ul>
+            <li class="aside-nav-lang"><a href="#"><i class='bx bx-world'></i></a></li>
+            <li class="contact-infos"><a href="#"><i class='bx bxs-phone'></i> </a></li>
+            <li class="contact-reseaux"><a href="#"><i class='bx bxl-facebook'></i></a></li>
+        </ul>
+    </div>
+
 
     <main>
         <table>
@@ -35,49 +96,48 @@
         </table>
 
         <section id="Description">
-            <h2>Description</h2>
-            <p class="frond-route" id="firstp">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            
-                <h3>Points Forts</h3>
-            <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-            </ul>
-
+            <h2>La nouvelle auberge à Chartres</h2>
+            <p class="frond-route" id="firstp">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
         </section>
-        
+
         <section id="Galerie">
             <h2>Galerie</h2>
             <div>
-            <img src="images/image1.jpg" alt="Image de montagne" height="250px">
-            <img src="images/image2.jpg" alt="Image de montagne" height="250px">
-            <img src="images/image3.jpg" alt="Image de montagne" height="250px">
+                <img src="" alt="" height="250px">
+                <img src="" alt="" height="250px">
+                <img src="" alt="" height="250px">
             </div>
         </section>
 
-        <section id="Services"><h2>Services et Equipements</h2>
-        <ul>
-            <li><strong>Wi-Fi :</strong> Inclus </li>
-            <li><strong>Parking :</strong> Privé et sécurité </li>
-            <li><strong>Petit-déjeuner :</strong> Disponible sur demande </li>
-            <li><strong>Piscine :</strong> Accès libre </li>
-        </ul>
+        <section id="Services">
+            <h2>Services et Equipements</h2>
+            <ul>
+                <li><strong>Wi-Fi :</strong> Inclus </li>
+                <li><strong>Parking :</strong> Privé et sécurité </li>
+                <li><strong>Petit-déjeuner :</strong> Disponible sur demande </li>
+                <li><strong>Piscine :</strong> Accès libre </li>
+            </ul>
         </section>
 
         <section id="Avis">
             <h2>Avis des clients</h2>
-                <div class="avis">
-                    <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum." - Marie France</blockquote>
-                    <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum." - Jean-Pierre</blockquote>
-                </div>
+            <div class="avis">
+                <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est
+                    laborum." - Marie France</blockquote>
+                <blockquote>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est
+                    laborum." - Jean-Pierre</blockquote>
+            </div>
         </section>
-        
+
         <section id="Contact">
             <h2>Contactez-nous</h2>
             <form action="send_mail.php">

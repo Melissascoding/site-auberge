@@ -2,144 +2,373 @@
    background-color: rgb(249, 241, 241);
  }
 
- header .navbar .nav-links a:hover{
-   color: #8f28be;
+.navbar .nav-links a:hover {
+  color: #8f28be;
  }
 
-
- header{
-  height: 100vh;
-  width: 100vw;
-  background-image: url(img/Banner-2.png);
-  background-position: top;
-  background-size: cover;
-  background-size: 80%;
-}
-
-.navbar{
-  position: absolute;
-  padding: 50px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  align-items: center;
+ .booking-container .btn:hover {
+  background-color: blue;
 }
 
 
-.navbar .nav-links ul{
-  display: flex;
-}
+ header {
+   height: 100vh;
+   width: 100vw;
+   background: url(Banner.png);
+   background-position: top;
+   background-position: 50% 30%;
+   background-size: cover;
+   background-size: 80%;
+ }
 
-.navbar .logo-top{
-  display: flex;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(5, 44, 5)
-  }
+ .navbar {
+   position: absolute;
+   padding: 50px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   box-sizing: border-box;
+   /*align-items: center;*/
+ }
 
+ .navbar .nav-links ul {
+   display: flex;
+   flex-direction: column;
+   margin: 0 100px;
+   justify-content: space-between;
+ }
+
+ .navbar .nav-links ul li {
+   padding: 2.5px 0;
+ }
+
+ .navbar .logo-top {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding-left: 100px;
+   font-size: 2em;
+   font-weight: bold;
+   color: rgb(13, 92, 13)
+ }
+
+ /*
   .navbar .logo-center{
     display: flex;
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(5, 44, 5)
-    }
-.navbar .nav-links .list-menu a{
-  display: flex;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(5, 44, 5)
-  }
+    }*/
 
-.navbar .nav-links ul li{
-  margin: 0 10px;
-}
+ .navbar .nav-links .list-menu a {
+   display: block;
+   font-size: 2em;
+   font-weight: bold;
+   color: rgb(13, 92, 13)
+ }
 
-.navbar .menu-hamburger{
-  display: none; /* afficher que quand la taille de l'écran change*/
-  position: absolute;
-  top: 35px;
-  right: 50px;
-  width: 35px;
-}
+ .navbar .nav-links ul li {
+   margin: 0 10px;
+ }
 
-section{
-  display: flex;
-  margin: ;
-  padding: 10px 40px;
-  justify-content:left;
-  width: 100%;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
+ .navbar .menu-hamburger {
+   display: none;
+   /* afficher que quand la taille de l'écran change*/
+   position: absolute;
+   top: 35px;
+   right: 50px;
+   width: 35px;
+ }
 
-section h2{
-  padding: 10px 10px;
-  margin: 10px 40px;
-}
+ .aside-menu {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   z-index: 99
+ }
+
+ .aside-menu ul {
+   padding: 0;
+ }
+
+ .aside-menu li {
+   position: relative;
+   list-style: none;
+   margin-bottom: 20px;
+ }
+
+ .aside-menu a {
+   padding: 12px 8px 8px;
+   background-color: blue;
+   transition: 0.2s;
+   border: 3px solid white;
+   border-radius: 80px 80px;
+   margin: 8px 8px;
+ }
+
+ .container-header {
+   padding: 1rem 1rem 5rem 1rem;
+ }
+
+ .header-container-image {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 500px;
+   /*
+   background-image:;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;*/
+   border-radius: 2rem;
+ }
+
+ .header-content {
+   max-width: 600px;
+   padding: 5rem 2rem;
+ }
+
+ .header-content p{
+  margin: 90px 0 0 0;
+  padding: 300px 50px 0 0;
+ }
+
+ 
+ .header-content h1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 3rem;
+   line-height: 4rem;
+   font-weight: 600;
+ }
+
+
+ .booking-container {
+   position: absolute;
+   bottom: -5rem;
+   left: 50%;
+   transform: translateX(-50%);
+   width: calc(100% - 6rem);
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   padding: 0 0 30px 0;
+   border-radius: 2rem;
+   background-color: rgba(255, 255, 255, 0.7);
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0, 0.2);
+ }
+
+ .booking-container form {
+   width: 100%;
+   flex: 1;
+   display: flex;
+   justify-content: space-around;
+
+ }
+
+ .booking-container .input-group {
+   width: 100%;
+   position: relative;
+ }
+
+ .booking-container label {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   font-size: 1.2rem;
+   font-weight: 500;
+   color: var(--text-dark);
+   pointer-events: none;
+   transition: 0.3s;
+ }
+
+ .booking-container input {
+   width: 100%;
+   padding: 10px 0;
+   font-size: 1rem;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   border-bottom: 1px solid lightgrey;
+   color: lightgrey;
+   opacity: 90%;
+ }
+
+ .booking-container input:focus~label {
+   font-size: 0.8rem;
+   top: 0;
+ }
 
 
 
-@media screen and (max-width: 900px) {
-  header{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(img/Banner-2.png);
-    background-position: top;
-    background-size: cover;
-    background-size: 100%;
-    background-repeat:no-repeat;
-  }
+ .booking-container .form-group {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-top: 3rem;
+   font-size: 0.8rem;
+   color: rgb(2, 58, 2);
+ }
 
-  .navbar .logo-top{
-    position: absolute;
-    top: 50px;  
-    left: 50px;   
-    font-size: 1em;     
-  }
+ .booking-container .form-group p {
+   margin: 0.5rem;
+   font-size: 0.8rem;
+   color: rgb(2, 58, 2);
+ }
 
-  .navbar{
-    padding: 0;
-  }
 
-  .navbar .menu-hamburger{
-    display: block;
-  }
 
-  .mobile-menu{
-    margin-left: 0;  
-  }
+ .booking-container .btn {
+   padding: 1rem;
+   outline: none;
+   border: none;
+   font-size: 1.5rem;
+   color: var(--white);
+   background-color: var(--primary-color);
+   border-radius: 100%;
+   cursor: pointer;
+   transition: 0.3s;
+ }
 
-  .nav-links{
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: rgba(45, 12, 42, 0.285);
-    backdrop-filter: blur(20px);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -100%;  
-    transition: 0.5s ease;
-  }
+ 
 
-  .nav-links .mobile-menu{
-    margin-left: 0;  
+ section {
+   display: flex;
+   margin: 0;
+   padding: 50px 70px;
+   justify-content: center;
+   width: 100%;
+   align-items: center;
+   font-family: Arial, Helvetica, sans-serif;
+ }
 
-  }
-  
-  .nav-links ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+ section h2 {
+   padding: 10px 50px 0;
+   font-size: 2em;
+ }
 
-  .navbar .nav-links ul li{
-    margin: 25px 0;
-    font-size: 1.2em;
-  }
+ section p {
+   padding: 10px 50px 0;
+ }
 
-  
-}
+
+ #Description {
+   display: flex;
+   flex-direction: column;
+   align-items: self-start;
+   padding: 50px 70px;
+   background: black;
+   color: rgb(255, 255, 255);
+ }
+
+ #Description h3 {
+   padding: 40px 0 0 0;
+ }
+
+ #Galerie {
+   display: flex;
+   flex-direction: column;
+   align-items: self-start;
+   padding: 50px 70px;
+   background: rgb(171, 123, 123);
+ }
+
+ #Services {
+   display: flex;
+   flex-direction: column;
+   align-items: self-start;
+   padding: 50px 70px;
+   background-image: url(images/bunkbeds.jpg);
+   background-size: 100%;
+   color: rgb(255, 255, 255);
+ }
+
+ #Avis {
+   display: flex;
+   flex-direction: column;
+   align-items: self-start;
+   padding: 50px 70px;
+ }
+
+ #Contact {
+   display: flex;
+   flex-direction: column;
+   align-items: self-start;
+   padding: 50px 70px;
+   background: rgb(10, 57, 38);
+   color: rgb(255, 255, 255);
+ }
+
+
+ /*----------------------------------------------------------------RESPONSIVE BELOW---------------------------------------------------------------------------*/
+
+ @media screen and (max-width: 900px) {
+   header {
+     height: 100vh;
+     width: 100vw;
+     background-image: url(img/Banner-2.png);
+     background-position: top;
+     background-size: cover;
+     background-size: 100%;
+     background-repeat: no-repeat;
+   }
+
+   .navbar .logo-top {
+     position: absolute;
+     top: 50px;
+     left: 50px;
+     font-size: 1em;
+   }
+
+   .navbar {
+     padding: 0;
+   }
+
+   .navbar .menu-hamburger {
+     display: block;
+   }
+
+   .mobile-menu {
+     margin-left: 0;
+   }
+
+   .nav-links {
+     top: 0;
+     left: 0;
+     position: absolute;
+     background-color: rgba(45, 12, 42, 0.285);
+     backdrop-filter: blur(20px);
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: -100%;
+     transition: 0.5s ease;
+   }
+
+   .nav-links .mobile-menu {
+     margin-left: 0;
+
+   }
+
+   .nav-links ul {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .navbar .nav-links ul li {
+     margin: 25px 0;
+     font-size: 1.2em;
+   }
+
+
+ }
