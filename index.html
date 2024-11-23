@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Belle Auberge</title>
-    <link rel="stylesheet" href="../site-auberge/styles/style.css">
-    <link rel="stylesheet" href="../site-auberge/styles/generic.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/generic.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
     </style>
@@ -19,61 +19,62 @@
             <a href="#" class="logo-top">CHARTRES</a>
             <div class="nav-links">
                 <ul class="list-menu">
-                    <li><a href="apropos.html">A PROPOS</a></li>
-                    <li><a href="galerie.html">GALERIE</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="avis.html">AVIS CLIENTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="../navigation/apropos.html">A PROPOS</a></li>
+                    <li><a href="../navigation/galerie.html">GALERIE</a></li>
+                    <li><a href="../navigation/services.html">SERVICES</a></li>
+                    <li><a href="../navigation/avis.html">AVIS CLIENTS</a></li>
+                    <li><a href="../navigation/contact.html">CONTACT</a></li>
                 </ul>
             </div>
 
-            <img src="site-auberge/images/lines.png" alt="menu hamburger" class="menu-hamburger">
+            <img src="images/menu-regular-24 (1).png" alt="menu hamburger" class="menu-hamburger">
 
         </nav>
 
         <div class="container-header">
-                
 
-                <div class="header-content">
-                    
-                </div>
 
-                <div class="booking-container">
-                    <form>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="date" id="start" name="trip-start" value="2025-01-01" min="2025-01-01"
-                                    max="2025-05-01">
-                                <label>Date d'arrivée</label>
-                            </div>
-                            <p>Entrez une date</p>
-                        </div>
+            <div class="header-content">
 
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="date" id="start" name="trip-end" value="2025-01-01" min="2025-01-01"
-                                    max="2025-05-01">
-                                <label>Date de départ</label>
-                            </div>
-                            <p>Entrez une date</p>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="number" id="number" min="1" max="10">
-                                <label>Invité.e.s</label>
-                            </div>
-                            <p>Ajoutez le nombre d'invité.e.s</p>
-                        </div>
-
-                    </form>
-
-                    <button class="btn">
-                        <i class='bx bx-search'></i>
-                    </button>
-
-                </div>
             </div>
+
+            <div class="booking-container">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="date" id="start" name="trip-start" value="2025-01-01" min="2025-01-01"
+                                max="2025-05-01">
+                            <label>Date d'arrivée</label>
+                        </div>
+                        <p>Entrez une date</p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="date" id="start" name="trip-end" value="2025-01-01" min="2025-01-01"
+                                max="2025-05-01">
+                            <label>Date de départ</label>
+                        </div>
+                        <p>Entrez une date</p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="number" id="number" min="1" max="10">
+                            <label>Invité.e.s</label>
+                        </div>
+                        <p>Ajoutez le nombre d'invité.e.s</p>
+                    </div>
+
+                </form>
+
+                <button class="btn">
+                    <i class='bx bx-search'></i>
+                </button>
+
+            </div>
+        </div>
         </div>
 
 
@@ -137,21 +138,68 @@
             </div>
         </section>
 
-        <section id="Contact">
-            <h2>Contactez-nous</h2>
-            <form action="send_mail.php">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email :</label>
-                <input type="text" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea name="message" id="message"></textarea required>
-                <button>Envoyer</button>
-            </form>
+        <section id="Reassurance">
+
+            <div class="reasurance-box">
+                <div class="resaurance-content">
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <div class="reasurance-title">
+                    <p></p>
+                </div>
+
+            </div>
         </section>
 
+
+
+
     </main>
-    <footer></footer>
+    <footer>
+        <div class="first-footer">
+            <h4>A DECOUVRIR</h4>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="first-footer">
+            <h4>A PROPOS</h4>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="first-footer">
+            <h4>MENTIONS LEGALES</h4>
+            <ul>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+        <div class="first-footer">
+            <h5>LINKS</h5>
+            <div class="social-links">
+                <a href="€"><i class='bx bxl-facebook-circle' style='color:#0d5c0d'></i></a>
+                <a href="€"><i class='bx bxl-instagram-alt' style='color:#0d5c0d'></i></a>
+            </div>
+        </div>
+
+
+        <div class="second-footer">
+            <div class="copy">
+                <h4>© 2024 La Belle Auberge de Mel. Tous Droits Réservés</h4>
+            </div>
+        </div>
+
+    </footer>
 </body>
-<script src="site-auberge/js.js"></script>
+<script src="../js.js"></script>
+
 </html>

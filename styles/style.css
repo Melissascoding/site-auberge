@@ -2,19 +2,26 @@
    background-color: rgb(249, 241, 241);
  }
 
-.navbar .nav-links a:hover {
-  color: #8f28be;
+ .navbar .nav-links a {
+   color: rgb(92, 13, 74);
+   /* Set a default color */
+   text-decoration: none;
+   /* Optional: Remove underline */
+ }
+
+ .navbar .nav-links ul li a:hover {
+   color: #ec3aae;
  }
 
  .booking-container .btn:hover {
-  background-color: blue;
-}
+   background-color: blue;
+ }
 
 
  header {
-   height: 100vh;
+   height: 90vh;
    width: 100vw;
-   background: url(images/Banner_4.png);
+   background: url(../images/Banner_4.png);
    background-position: top;
    background-position: 50% 30%;
    background-size: cover;
@@ -49,7 +56,7 @@
    padding-left: 100px;
    font-size: 2em;
    font-weight: bold;
-   color: rgb(13, 92, 13)
+   color: #0d5c0d
  }
 
  /*
@@ -131,12 +138,12 @@
    padding: 5rem 2rem;
  }
 
- .header-content p{
-  margin: 90px 0 0 0;
-  padding: 300px 50px 0 0;
+ .header-content p {
+   margin: 90px 0 0 0;
+   padding: 300px 50px 0 0;
  }
 
- 
+
  .header-content h1 {
    display: flex;
    align-items: center;
@@ -149,7 +156,7 @@
 
  .booking-container {
    position: absolute;
-   bottom: 0rem;
+   bottom: 4rem;
    left: 50%;
    transform: translateX(-50%);
    width: calc(100% - 6rem);
@@ -237,7 +244,7 @@
    transition: 0.3s;
  }
 
- 
+
 
  section {
    display: flex;
@@ -264,8 +271,8 @@
    flex-direction: column;
    align-items: self-start;
    padding: 50px 70px;
-   background: black;
-   color: rgb(255, 255, 255);
+   background: #fadde1;
+   color: rgb(0, 0, 0);
  }
 
  #Description h3 {
@@ -306,6 +313,97 @@
    color: rgb(255, 255, 255);
  }
 
+ footer {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: auto;
+   background-color: black;
+   padding: 60px 10%;
+ }
+
+ footer ul {
+   list-style: none;
+   justify-content: center;
+  
+ }
+
+ .first-footer {
+   width: 25%;
+ }
+
+ .first-footer h4 {
+   position: relative;
+   margin-bottom: 30px;
+   font-weight: 400;
+   font-size: 22px;
+   color: purple;
+   text-transform: capitalize;
+ }
+
+ .first-footer {
+   width: 25%;
+ }
+
+
+ .first-footer h4::before {
+   content: ' ';
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   background-color: aqua;
+   height: 2px;
+   width: 40px;
+ }
+
+ footer ul li:not(:last-child) {
+   margin-bottom: 8px;
+ }
+
+ footer ul li a {
+   display: block;
+   font-size: 19px;
+   text-transform: initial;
+   color: #ec3aae;
+   transition: 0.4s;
+ }
+
+ footer ul li a:hover {
+   color: white;
+   padding-left: 2px;
+ }
+
+ .first-footer .social-links a {
+   display: inline-block;
+   height: 44px;
+   width: 44px;
+   color: white;
+   background-color: rgb(16, 123, 189);
+   margin: 0 8px 8px 0;
+   text-align: center;
+   line-height: 44px;
+   border-radius: 50px;
+   transition: 0.4s;
+ }
+
+ .first-footer .social-links a:hover {
+   color: rgb(255, 255, 255);
+   padding-left: 2px;
+   background-color: white;
+ }
+
+ .second-footer .copy h4 {
+   font-size: .875rem;
+   color: #fff;
+   letter-spacing: 0;
+   line-height: 15px;
+   display: flex;
+   margin-bottom: 20px;
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+   padding: 50%;
+
+ }
 
  /*----------------------------------------------------------------RESPONSIVE BELOW---------------------------------------------------------------------------*/
 
@@ -369,6 +467,22 @@
      margin: 25px 0;
      font-size: 1.2em;
    }
+ }
 
+ @media(max-width: 740px) {
+   .first-footer {
+     width: 50%;
+     margin-bottom: 30px;
+     text-align: center;
+   }
 
+   .first-footer h4::before {
+     all: unset;
+   }
+ }
+
+ @media(max-width: 555px) {
+   .first-footer {
+     width: 100%;
+   }
  }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="section-header">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+
+                <div class="contact-info-content">
+                    <h4>Address</h4>
+                    <p>4671 Sugar Camp Road,<br /> Owatonna, Minnesota, <br />55060</p>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div class="contact-info-content">
+                    <h4>Phone</h4>
+                    <p>571-457-2321</p>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="contact-info-content">
+                    <h4>Email</h4>
+                    <p>ntamerrwael@mfano.ga</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="" id="contact-form">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                    <input type="text" required="true" name="">
+                    <span>Full Name</span>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" required="true" name="">
+                    <span>Email</span>
+                </div>
+
+                <div class="input-box">
+                    <textarea required="true" name=""></textarea>
+                    <span>Type your Message...</span>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" value="Send" name="">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="styles/style_contact.css">
+</head>
+
+<body>
+<div class="formBox">
+    <h2>Contact Us</h2>
+    <p>You will hear from us at the earliest!</p>
+    <form action="#">
+        <div class="nameInp">
+            <i class="fa fa-user icon"></i>
+            <input type="text" placeholder="Full Name" name="name" id="name">
+
+        </div>
+        <div class="mailInp">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="mail" id="mail" placeholder="Email">
+        </div>
+        <div class="phoneInp">
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" name="phone" id="phone" placeholder="Phone" min="100000" max="9999999999">
+        </div>
+        <div class="queryInp">
+            <textarea name="query" id="query" cols="30" rows="5" placeholder="Any comment or your query"></textarea>
+        </div>
+        <div class="submitBtn">
+            <button id="btn" onclick="notif()">Send</button>
+        </div>
+    </form>
+    <p class="extra">You can also contact us at 181-1711-322</p>
+</div>
+<section id="Contact">
+    <h2>Contactez-nous</h2>
+    <form action="send_mail.php">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="email" required>
+        <label for="message">Message :</label>
+        <textarea name="message" id="message"></textarea required>
+        <button>Envoyer</button>
+    </form>
+</section>
+
+</body>
+</html>
+
+
+    
